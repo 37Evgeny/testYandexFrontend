@@ -1,6 +1,17 @@
+/* Стили для страницы (page) */
 .page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 26px;
+  min-height: 100vh; /* Минимальная высота страницы равна 100% высоты видимой области браузера */
+  display: flex; /* Используем flexbox для расположения дочерних элементов */
+  flex-direction: column; /* Элементы располагаются в вертикальном направлении (столбик) */
+}
+
+h1 {
+  color: rgb(49, 49, 49);
+  font-family: Merriweather;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
 }
