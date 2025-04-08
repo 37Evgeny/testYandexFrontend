@@ -23,3 +23,94 @@
 .support__img {
   height: 100%;
 }
+
+.support {
+  margin-top: 78px;
+}
+
+.support__text__red {
+  color: rgb(245, 73, 50);
+  font-weight: 700;
+  font-family: Merriweather;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 135%;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.epic_session__cnt {
+  display: grid;
+  grid-template-columns: auto 58%;
+  grid-template-rows: auto;
+  gap: 17px;
+  align-items: center;
+}
+
+table {
+  width: 100%; /* Ширина таблицы */
+  border-collapse: collapse; /* Убирает двойные границы между ячейками */
+}
+
+td {
+  border: 2px solid rgb(208, 208, 208);
+  padding: 16px 0px; /* Отступ внутри ячеек */
+  text-align: left; /* Выравнивание текста по левому краю */
+}
+
+tr:first-child td {
+  border-top: none; /* Убирает верхнюю границу у первой строки */
+}
+
+tr:last-child td {
+  border-bottom: none; /* Убирает нижнюю границу у последней строки */
+}
+td:first-child {
+  border-left: none; /* Убирает левую границу у первой ячейки в каждой строке */
+}
+
+td:first-child {
+  border-right: none; /* Убирает левую границу у первой ячейки в каждой строке */
+}
+
+td:last-child {
+  border-right: none; /* Убирает правую границу у последней ячейки в каждой строке */
+}
+
+.td__left {
+  opacity: 0.7;
+  color: rgb(49, 49, 49);
+  font-family: Golos Text;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.td__right {
+padding-left: 16px;
+  color: rgb(49, 49, 49);
+  font-family: Golos Text;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.td__span {
+  text-decoration: line-through; /* Зачеркивание текста */
+}
+
+.epic__session_a {
+    width: 100%;
+  color: rgb(48, 87, 162);
+  font-family: Golos Text;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: center;
+}
