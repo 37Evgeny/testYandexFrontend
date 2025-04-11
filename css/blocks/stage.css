@@ -48,7 +48,7 @@
     flex-direction: row; 
     justify-content: center; 
     align-items: center;
-    border-radius: 60px; /* Закругление углов (круглая форма) */
+    border-radius: 50%; /* Закругление углов (круглая форма) */
     background: rgb(255, 255, 255); /* Цвет фона элемента номера этапа (белый) */
 }
 
@@ -90,4 +90,6 @@
 }
 
 /* Ширина текста в элементе item7 */ 
-.item
+.item7__text {
+   width: 446px;
+}

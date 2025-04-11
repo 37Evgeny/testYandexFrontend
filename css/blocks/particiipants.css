@@ -23,3 +23,70 @@
     display: flex;
     justify-content: space-between;
 }
+
+.participants__cnt {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__avatar {
+    position: relative;
+    padding: 20px;
+    width: 300px; /* Ширина круга */
+    height: 300px; /* Высота круга */
+    border-radius: 50%; /* Округление для создания круга */
+    background: rgb(233, 222, 212);
+    overflow: hidden; /* Скрываем все, что выходит за пределы элемента */
+}
+
+.card__avatar::after {
+    content: ''; /* Создаем пустой контент для псевдоэлемента */
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    bottom: -40px; /* Сдвигаем вниз на 40 пикселей (можно настроить) */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Центрируем по горизонтали с учетом ширины элемента */
+    width: 300px; /* Ширина изображения (можно настроить) */
+    height: 300px; /* Высота изображения (можно настроить) */
+    background-image: url('../../img/avatar.png'); /* Фоновое изображение */
+    background-size: cover; /* Масштабирование изображения, чтобы оно заполнило круг */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 394px;
+    gap: 20px;
+}
+
+.card__name {
+    color: rgb(49, 49, 49);
+font-family: Golos Text;
+font-size: 24px;
+font-weight: 600;
+line-height: 120%;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.card__title {
+    color: rgb(49, 49, 49);
+font-family: Golos Text;
+font-size: 20px;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0px;
+text-align: left;
+opacity: 0.6;
+}
+
+.participants__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.participants {
+margin-top: 200px;
+}
+
