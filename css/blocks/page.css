@@ -5,24 +5,37 @@
   flex-direction: column; /* Элементы располагаются в вертикальном направлении (столбик) */
 }
 
+/* Стили для заголовка первого уровня (h1) */
 h1 {
+  color: rgb(49, 49, 49); /* Цвет текста заголовка */
+  font-family: Merriweather; /* Шрифт для заголовка */
+  font-size: 60px; /* Размер шрифта заголовка */
+  font-weight: 400; /* Нормальная жирность шрифта */
+  line-height: 110%; /* Высота строки для лучшей читаемости текста */
+  letter-spacing: 0px; /* Межбуквенный интервал (без отступов) */
+  text-align: left; /* Выравнивание текста по левому краю */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+}
+
+/* Стили для заголовка второго уровня (h2) */
+h2 {
+  color: rgb(49, 49, 49); /* Цвет текста заголовка второго уровня */
+  font-family: Merriweather; /* Шрифт для заголовка второго уровня */
+  font-size: 54px; /* Размер шрифта заголовка второго уровня */
+  font-weight: 400; /* Нормальная жирность шрифта */
+  line-height: 120%; /* Высота строки для лучшей читаемости текста */
+  letter-spacing: 0px; /* Межбуквенный интервал (без отступов) */
+  text-align: left; /* Выравнивание текста по левому краю */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+}
+
+h3 {
   color: rgb(49, 49, 49);
   font-family: Merriweather;
-  font-size: 60px;
+  font-size: 54px;
   font-weight: 400;
-  line-height: 110%;
+  line-height: 120%;
   letter-spacing: 0px;
   text-align: left;
   text-transform: uppercase;
-} 
-
-h2 {
-    color: rgb(49, 49, 49);
-    font-family: Merriweather;
-    font-size: 54px;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 0px;
-    text-align: left;
-    text-transform: uppercase;
 }

@@ -1,120 +1,139 @@
+/* Стили для текста поддержки */
 .support__text {
-  font-family: Merriweather;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 135%;
-  letter-spacing: 0px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.support__cnt {
-  display: grid;
-  grid-template-columns: 66% auto;
-  grid-template-rows: auto;
-  gap: 34px;
-  align-items: center;
-}
-
-.support__text__cnt {
-  padding: 27px 0px;
-}
-
-.support__img {
-  height: 100%;
-}
-
-.support {
-  margin-top: 78px;
-}
-
-.support__text__red {
-  color: rgb(245, 73, 50);
-  font-weight: 700;
-  font-family: Merriweather;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 135%;
-  letter-spacing: 0px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.epic_session__cnt {
-  display: grid;
-  grid-template-columns: auto 58%;
-  grid-template-rows: auto;
-  gap: 17px;
-  align-items: center;
-}
-
-table {
-  width: 100%; /* Ширина таблицы */
-  border-collapse: collapse; /* Убирает двойные границы между ячейками */
-}
-
-td {
-  border: 2px solid rgb(208, 208, 208);
-  padding: 16px 0px; /* Отступ внутри ячеек */
-  text-align: left; /* Выравнивание текста по левому краю */
-}
-
-tr:first-child td {
-  border-top: none; /* Убирает верхнюю границу у первой строки */
-}
-
-tr:last-child td {
-  border-bottom: none; /* Убирает нижнюю границу у последней строки */
-}
-td:first-child {
-  border-left: none; /* Убирает левую границу у первой ячейки в каждой строке */
-}
-
-td:first-child {
-  border-right: none; /* Убирает левую границу у первой ячейки в каждой строке */
-}
-
-td:last-child {
-  border-right: none; /* Убирает правую границу у последней ячейки в каждой строке */
-}
-
-.td__left {
-  opacity: 0.7;
-  color: rgb(49, 49, 49);
-  font-family: Golos Text;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: 0px;
-  text-align: left;
-}
-
-.td__right {
-padding-left: 16px;
-  color: rgb(49, 49, 49);
-  font-family: Golos Text;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 120%;
-  letter-spacing: 0px;
-  text-align: left;
-}
-
-.td__span {
-  text-decoration: line-through; /* Зачеркивание текста */
-}
-
-.epic__session_a {
-    width: 100%;
-  color: rgb(48, 87, 162);
-  font-family: Golos Text;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: 0px;
-  text-align: center;
-}
-
-.epic_session__cnt {
-    margin-top: 16px;
-}
+    font-family: Merriweather; /* Шрифт для текста поддержки */
+    font-size: 36px; /* Размер шрифта */
+    font-weight: 400; /* Нормальная жирность шрифта */
+    line-height: 135%; /* Высота строки для лучшей читаемости текста */
+    letter-spacing: 0px; /* Межбуквенный интервал (без отступов) */
+    text-align: left; /* Выравнивание текста по левому краю */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+  }
+  
+  /* Контейнер для поддержки с сеткой */
+  .support__cnt {
+    display: grid; /* Используем CSS Grid для расположения дочерних элементов */
+    grid-template-columns: 66% auto; /* Определяем колонки (66% и авто) */
+    grid-template-rows: auto; /* Автоматическая высота строк */
+    gap: 34px; /* Промежуток между элементами сетки */
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
+  }
+  
+  /* Контейнер для текста поддержки с отступами */
+  .support__text__cnt {
+    padding: 27px 0px; /* Отступ сверху и снизу */
+  }
+  
+  /* Изображение поддержки с высотой в 100% от родителя */
+  .support__img {
+    height: 100%; /* Высота изображения равна высоте родительского элемента */
+  }
+  
+  /* Отступ сверху для блока поддержки */
+  .support {
+    margin-top: 78px; /* Отступ сверху блока поддержки */
+  }
+  
+  /* Стили для красного текста в поддержке */
+  .support__text__red {
+    color: rgb(245, 73, 50); /* Красный цвет текста */
+    font-weight: 700; /* Жирный шрифт */
+    font-family: Merriweather; /* Шрифт для красного текста */
+    font-size: 36px; /* Размер шрифта красного текста */
+    line-height: 135%; /* Высота строки для лучшей читаемости текста */
+    letter-spacing: 0px; /* Межбуквенный интервал (без отступов) */
+    text-align: left; /* Выравнивание текста по левому краю */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+  }
+  
+  /* Контейнер для эпической сессии с сеткой */
+  .epic_session__cnt {
+      display: grid; /* Используем CSS Grid для расположения дочерних элементов */
+      grid-template-columns: auto 58%; /* Определяем колонки (авто и 58%) */
+      grid-template-rows: auto; /* Автоматическая высота строк */
+      gap: 17px; /* Промежуток между элементами сетки */
+      align-items: center; /* Выравнивание элементов по центру по вертикали */
+  }
+  
+  /* Стили для таблицы */ 
+  table {
+      width: 100%; /* Ширина таблицы занимает всю доступную ширину родителя */ 
+      border-collapse: collapse; /* Убирает двойные границы между ячейками */ 
+  }
+  
+  /* Стили для ячеек таблицы (td) */ 
+  td {
+      border: 2px solid rgb(208,208,208); /* Цвет границы ячеек */ 
+      padding:16px0px;/* Отступ внутри ячеек */ 
+      text-align:left;/* Выравнивание текста по левому краю */ 
+  }
+  
+  /* Убирает верхнюю границу у первой строки таблицы */ 
+  tr:first-child td { 
+      border-top:none;
+  }
+  
+  /* Убирает нижнюю границу у последней строки таблицы */ 
+  tr:last-child td { 
+      border-bottom:none;
+  }
+  
+  /* Убирает левую границу у первой ячейки в каждой строке */ 
+  td:first-child { 
+      border-left:none;
+  }
+  
+  /* Убирает правую границу у первой ячейки в каждой строке */ 
+  td:first-child { 
+      border-right:none;
+  }
+  
+  /* Убирает правую границу у последней ячейки в каждой строке */ 
+  td:last-child { 
+      border-right:none;
+  }
+  
+  /* Стили для левой ячейки таблицы с уменьшенной непрозрачностью */ 
+  .td__left { 
+      opacity:.7;
+      color:rgb(49,49,49);/* Цвет текста */ 
+      font-family:Golos Text;/* Шрифт */ 
+      font-size:20px;
+      font-weight:400;
+      line-height:120%;
+      letter-spacing:0px;
+      text-align:left;
+  }
+  
+  /* Стили для правой ячейки таблицы с увеличенной жирностью шрифта */ 
+  .td__right { 
+     padding-left:16px;
+     color:rgb(49,49,49);
+     font-family:Golos Text;
+     font-size:20px;
+     font-weight:bold;
+     line-height=120%;
+     letter-spacing=0px;
+     text-align:left;
+  }
+  
+  /* Зачеркивание текста в ячейках таблицы */ 
+  .td__span { 
+     text-decoration=line-through;
+  }
+  
+  /* Стили для ссылок в эпической сессии */  
+  .epic__session_a {  
+     width=100%;  
+     color=rgb(48,87,162);  
+     font-family=Golos Text;  
+     font-size=20px;  
+     font-weight=400;  
+     line-height=120%;  
+     letter-spacing=0px;  
+     text-align=center;
+  } 
+  
+  /* Отступ сверху для контейнера эпической сессии */  
+  .epic_session__cnt {  
+     margin-top=16px;
+  }

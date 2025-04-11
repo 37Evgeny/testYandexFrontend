@@ -1,0 +1,25 @@
+.btns__prev {
+  transform: rotate(180deg); /* Поворачивает изображение на 180 градусов */
+}
+
+.participants__num {
+  color: rgb(49, 49, 49);
+  font-family: Golos Text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 0.3;
+}
+
+.participants__nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.participants__hed {
+    display: flex;
+    justify-content: space-between;
+}
