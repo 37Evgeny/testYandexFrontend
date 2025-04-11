@@ -1,93 +1,94 @@
 .btns__prev {
-  transform: rotate(180deg); /* Поворачивает изображение на 180 градусов */
-}
-
-.participants__num {
-  color: rgb(49, 49, 49);
-  font-family: Golos Text;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: 0px;
-  text-align: left;
-  opacity: 0.3;
-}
-
-.participants__nav {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.participants__hed {
-    display: flex;
-    justify-content: space-between;
-}
-
-.participants__cnt {
-    display: flex;
-    flex-direction: column;
-}
-
-.card__avatar {
-    position: relative;
-    padding: 20px;
-    width: 300px; /* Ширина круга */
-    height: 300px; /* Высота круга */
-    border-radius: 50%; /* Округление для создания круга */
-    background: rgb(233, 222, 212);
-    overflow: hidden; /* Скрываем все, что выходит за пределы элемента */
-}
-
-.card__avatar::after {
-    content: ''; /* Создаем пустой контент для псевдоэлемента */
-    position: absolute; /* Абсолютное позиционирование относительно родителя */
-    bottom: -40px; /* Сдвигаем вниз на 40 пикселей (можно настроить) */
-    left: 50%; /* Центрируем по горизонтали */
+    transform: rotate(180deg); /* Поворачивает элемент на 180 градусов (например, для кнопки "Назад") */
+  }
+  
+  .participants__num {
+    color: rgb(49, 49, 49); /* Цвет текста для номера участников */
+    font-family: Golos Text; /* Шрифт текста */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: 400; /* Нормальная жирность шрифта */
+    line-height: 120%; /* Высота строки (междустрочный интервал) */
+    letter-spacing: 0px; /* Пробел между буквами */
+    text-align: left; /* Выравнивание текста по левому краю */
+    opacity: 0.3; /* Прозрачность текста (0 - полностью прозрачный, 1 - полностью непрозрачный) */
+  }
+  
+  .participants__nav {
+    display: flex; /* Используем flexbox для выравнивания элементов в строку */
+    gap: 10px; /* Промежуток между элементами навигации */
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
+  }
+  
+  .participants__hed {
+    display: flex; /* Используем flexbox для выравнивания заголовка участников */
+    justify-content: space-between; /* Распределяем пространство между элементами заголовка */
+  }
+  
+  .participants__cnt {
+    display: flex; /* Используем flexbox для контейнера участников */
+    flex-direction: column; /* Устанавливаем направление элементов в колонку */
+  }
+  
+  .card__avatar {
+    position: relative; /* Устанавливаем относительное позиционирование для псевдоэлемента ::after */
+    padding: 20px; /* Внутренний отступ вокруг аватара */
+    width: 300px; /* Ширина круга аватара */
+    height: 300px; /* Высота круга аватара */
+    border-radius: 50%; /* Округление для создания круга аватара */
+    background: rgb(233, 222, 212); /* Фоновый цвет аватара */
+    overflow: hidden; /* Скрываем все, что выходит за пределы элемента (аватара) */
+  }
+  
+  .card__avatar::after {
+    content: ""; /* Создаем пустой контент для псевдоэлемента (изображение) */
+    position: absolute; /* Абсолютное позиционирование относительно родителя (.card__avatar) */
+    bottom: -40px; /* Сдвигаем вниз на -40 пикселей (можно настроить) */
+    left: 50%; /* Центрируем по горизонтали относительно родителя */
     transform: translateX(-50%); /* Центрируем по горизонтали с учетом ширины элемента */
-    width: 300px; /* Ширина изображения (можно настроить) */
-    height: 300px; /* Высота изображения (можно настроить) */
-    background-image: url('../../img/avatar.png'); /* Фоновое изображение */
-    background-size: cover; /* Масштабирование изображения, чтобы оно заполнило круг */
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 394px;
-    gap: 20px;
-}
-
-.card__name {
-    color: rgb(49, 49, 49);
-font-family: Golos Text;
-font-size: 24px;
-font-weight: 600;
-line-height: 120%;
-letter-spacing: 0px;
-text-align: left;
-}
-
-.card__title {
-    color: rgb(49, 49, 49);
-font-family: Golos Text;
-font-size: 20px;
-font-weight: 400;
-line-height: 120%;
-letter-spacing: 0px;
-text-align: left;
-opacity: 0.6;
-}
-
-.participants__cards {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 32px;
-}
-
-.participants {
-margin-top: 200px;
-margin-bottom: 135px;
-}
-
+    
+     width: 300px; /* Ширина изображения (можно настроить) */
+     height: 300px; /* Высота изображения (можно настроить) */
+  
+     background-image: url("../../img/avatar.png"); /* Фоновое изображение аватара */
+     background-size: cover; /* Масштабирование изображения, чтобы оно заполнило круг аватара */
+  }
+  
+  .card {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+      width:394px;
+      gap :20px;
+  }
+  
+  .card__name {
+      color : rgb(49,49,49);
+      font-family : Golos Text;
+      font-size :24px;
+      font-weight :600;
+      line-height :120%;
+      letter-spacing :0px;
+      text-align :left;
+  }
+  
+  .card__title {
+      color : rgb(49,49,49);
+      font-family : Golos Text;
+      font-size :20px;
+      font-weight :400;
+      line-height :120%;
+      letter-spacing :0px;
+      text-align :left;
+      opacity :0.6;
+  }
+  
+  .participants__cards {
+     display:flex;
+     justify-content :space-between;
+     margin-top :32px;
+  }
+  
+  .participants {
+     margin-top :200px;
+     margin-bottom :135px;
+  }
