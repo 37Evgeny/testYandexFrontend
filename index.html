@@ -216,17 +216,17 @@
                     Участники турнира
                 </h3>
                 <div class="participants__nav">
-                    <button class="btns">
+                    <button class="btns" id="prevBtn" data-direction="prev">
                         <img src="./img/btn.svg" alt="img" class="btns__prev">
                     </button>
-                    <span class="participants__num">3/6</span>
-                    <button class="btns">
+                    <span class='participants__num'></span> 
+                    <button class="btns" id="nextBtn" data-direction="next">
                         <img src="./img/btn.svg" alt="img" class="btns__next">
                     </button>
                 </div>
             </div>
             <div class="participants__cards">
-                <div class="card">
+                <div class="card ">
                     <div class="card__avatar"></div>
                     <div class="card__name__cnt">
                         <p class="card__name">
@@ -241,7 +241,7 @@
                         Подробнее
                     </button>
                 </div>
-                <div class="card">
+                <div class="card ">
                     <div class="card__avatar"></div>
                     <div class="card__name__cnt">
                         <p class="card__name">
@@ -256,7 +256,7 @@
                         Подробнее
                     </button>
                 </div>
-                <div class="card">
+                <div class="card ">
                     <div class="card__avatar"></div>
                     <div class="card__name__cnt">
                         <p class="card__name">
@@ -267,6 +267,48 @@
                         </p>
                     </div>
                   
+                    <button class="btn__more">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card__avatar"></div>
+                    <div class="card__name__cnt">
+                        <p class="card__name">
+                            Арон Нимцович
+                        </p>
+                        <p class="card__title">
+                            Чемпион мира по шахматам
+                        </p>
+                    </div>
+                    <button class="btn__more">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card__avatar"></div>
+                    <div class="card__name__cnt">
+                        <p class="card__name">
+                            Рихард Рети
+                        </p>
+                        <p class="card__title">
+                            Чемпион мира по шахматам
+                        </p>
+                    </div>
+                    <button class="btn__more">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card__avatar"></div>
+                    <div class="card__name__cnt">
+                        <p class="card__name">
+                            Остап Бендер
+                        </p>
+                        <p class="card__title">
+                            Чемпион мира по шахматам
+                        </p>
+                    </div>
                     <button class="btn__more">
                         Подробнее
                     </button>
@@ -298,7 +340,7 @@
             Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
         </p>
     </footer>
-
+    <script src="./js/card.js"></script>
     <script src="./js/animations.js"></script>
 </body>
 </html>
