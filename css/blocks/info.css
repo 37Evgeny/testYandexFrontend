@@ -34,24 +34,4 @@
   gap: 16px; /* Пробел между кнопками */
 }
 
-.info__line {
-  position: absolute; /* Абсолютное позиционирование для линии информации */
-  bottom: 0px; /* Прикрепляем к нижней части контейнера .info */
-  left: 0px;
-  width: 9999px; /* Занимаем всю ширину контейнера (можно использовать '100%' вместо '9999px') */
-  display: flex; /* Используем flexbox для расположения элементов в линии информации */
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 12px; /* Пробел между элементами в линии информации */
-  padding: 18px 12px; /* Внутренние отступы вокруг линии информации */
-  background-color: rgb(245, 73, 50); /* Фоновый цвет линии информации */
-  color: white;
-  font-family: "Merriweather", serif; /* Шрифт текста с запасным вариантом */
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 110%;
-  letter-spacing: 0px;
-  text-align: right;
-  text-transform: uppercase;
-}
+

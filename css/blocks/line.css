@@ -1,3 +1,39 @@
-.line__footer {
-    position: relative;
+.marquee {
+    overflow: hidden; /* Скрываем переполнение */
+    white-space: nowrap; /* Запрещаем перенос строк */
+    width: 100%; /* Ширина контейнера */
+    position: relative; /* Относительное позиционирование для контейнера */
+}
+
+.marquee-content {
+    display: inline-flex; /* Используем Flexbox для размещения элементов в строку */
+    animation: marquee 20s linear infinite; /* Применяем анимацию */
+}
+
+.line__info {
+    position: absolute; /* Абсолютное позиционирование для линии информации */
+    bottom: 0px; /* Прикрепляем к нижней части контейнера .info */
+    left: 0px;
+    display: flex; /* Используем flexbox для расположения элементов в линии информации */
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px; /* Пробел между элементами в линии информации */
+  }
+
+.info__line {
+    display: inline-block; /* Делаем элемент строчным блоком */
+    padding: 18px 12px; /* Внутренние отступы вокруг линии информации */
+    background-color: rgb(245, 73, 50); /* Фоновый цвет линии информации */
+    color: white;
+    font-family: "Merriweather", serif; /* Шрифт текста с запасным вариантом */
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); } /* Начальная позиция (в начале контейнера) */
+    100% { transform: translateX(-50%); } /* Конечная позиция (в конце первой части) */
 }
